@@ -16,21 +16,17 @@ GAMESCOPE_OPTS=(
     --prefer-vk-device 0
     --rt              # Real-time scheduling
     --hdr-enabled     # Enable HDR if available
-    --framerate-limit "$(( ${GAMESCOPE_REFRESH:-60} * 2 ))"
-    #--refresh-rate "${GAMESCOPE_REFRESH:-60}"
+    --framerate-limit "$(( ${GAMESCOPE_REFRESH:-165} * 2 ))"
+    --nested-refresh "${GAMESCOPE_REFRESH:-165}"
 
-    # Mouse settings (Windows-like raw input)
-    #--mouse-raw-input
-    #--mouse-accel-profile none
+    # Mouse settings
     --mouse-sensitivity 1.0
     --force-grab-cursor
 
     # Performance
     --immediate-flips
-    #--adaptive-sync-disabled
-    #--mangoapp-disabled
+    --mangoapp
     --disable-layers
-    #--disable-overlay
 
     # Fullscreen
     --fullscreen
