@@ -25,7 +25,6 @@ GAMESCOPE_OPTS=(
 
     # Performance
     --immediate-flips
-    --mangoapp
     --disable-layers
 
     # Fullscreen
