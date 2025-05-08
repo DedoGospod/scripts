@@ -16,3 +16,15 @@ else
 fi
 
 sudo reboot
+
+######## FIND WINDOWS INDEX WITH
+# grep -i "menuentry" /boot/grub/grub.cfg 
+
+####### ADD THE SETTINGS BELOW TO GRUB ( /ETC/DEFAULT/GRUB ) 
+
+# Use 'saved' to remember the last booted entry (allows grub-reboot to work)
+GRUB_DEFAULT=saved
+
+# If true, GRUB will automatically update the saved entry when booting
+# This allows temporary changes (like grub-reboot) to work properly
+GRUB_SAVEDEFAULT=true
