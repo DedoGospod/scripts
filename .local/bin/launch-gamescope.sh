@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Bazzite's default Gamescope + Steam launcher
-# Includes mouse raw input, performance optimizations, and resolution scaling
+# Gamescope setup. Includes: mouse raw input, performance optimizations, and resolution scaling
 
 set -e
 
