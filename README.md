@@ -1,8 +1,10 @@
 # scripts
 my personal scripts
 
-# Reboot to windows
-Location: /usr/local/bin
+# Location: /usr/local/bin
+- reboot-to-windows
+- 
 
-# Launch gamescope  
-Location: /.local/bin
+# Location: /.local/bin
+- launch-gamescope.sh
+-
