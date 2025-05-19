@@ -7,4 +7,4 @@ my personal scripts
 
 # Location: /.local/bin
 - launch-gamescope.sh
--
+- idle-inhibitor.sh
