@@ -6,11 +6,11 @@ HYPRIDLE_RUNNING=$(pgrep -x "hypridle")
 if [ -n "$HYPRIDLE_RUNNING" ]; then
     # hypridle is running, so stop it and stop sway-audio-idle-inhibit
     killall hypridle
-    killall "sway-audio-idle-inhibit"                      # Kill the sway-audio-idle-inhibit process
-    notify-send -u critical -t 0 "SLEEP DISABLED." -t 1000 # 1 second notification
+    killall "sway-audio-idle-inhibit" # Kill the sway-audio-idle-inhibit process
+    notify-send -t 1000 "SLEEP DISABLED."
 else
     # hypridle is not running, so start it and start sway-audio-idle-inhibit
     systemctl --user start --now hypridle.service
     /usr/bin/sway-audio-idle-inhibit &
-    notify-send -u critical -t 0 "SLEEP ENABLED" -t 1000 # 1 second notification
+    notify-send -t 1000 "SLEEP ENABLED"
 fi
