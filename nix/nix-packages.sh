@@ -24,3 +24,7 @@ else
     echo "Error: One or more package installations failed."
     exit 1
 fi
+
+
+# Add nix pkgs to environemnt
+export XDG_DATA_DIRS=$HOME/.nix-profile/share:$XDG_DATA_DIRS
