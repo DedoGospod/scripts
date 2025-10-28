@@ -7,5 +7,3 @@ stow user-scripts
 
 echo "Stowing system scripts... (Requires sudo)"
 sudo stow -t / system-scripts
-
-
