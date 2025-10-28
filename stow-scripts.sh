@@ -3,7 +3,7 @@
 set -e
 
 echo "Stowing user scripts..."
-stow user-scripts.sh 
+stow user-scripts
 
 echo "Stowing system scripts... (Requires sudo)"
 sudo stow -t / system-scripts
