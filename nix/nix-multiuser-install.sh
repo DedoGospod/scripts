@@ -4,7 +4,6 @@ set -euo pipefail
 # --- Configuration ---
 NIX_CONF_PATH="/etc/nix/nix.conf"
 NIX_INSTALL_URL="https://nixos.org/nix/install"
-NIX_BUILD_USERS="nixbld" # Default group for build users
 
 echo "🚀 Starting Nix Multi-User Flake Installation..."
 
