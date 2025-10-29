@@ -17,7 +17,7 @@ echo ""
 # Use nix profile install to install all packages at once
 nix profile install --accept-flake-config "${PACKAGES[@]}"
 
-if [ $? -eq 0 ]; then
+if [ $? -eq 0 ]; then 
     echo "All selected packages have been successfully installed."
     echo "You might need to start a new shell session (e.g., re-login, or run 'exec \$SHELL') for the new commands to be immediately available."
 else

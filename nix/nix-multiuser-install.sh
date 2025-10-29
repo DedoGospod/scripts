@@ -47,8 +47,6 @@ echo "✅ $NIX_CONF_PATH updated to enable flakes and set binary caches."
 
 # 5. Add current user to the 'nix-users' group
 echo "Adding user '$USER' to the 'nix-users' group."
-# The installer *should* do this, but we ensure it.
-# The user will need to log out/in or run 'newgrp' to activate this.
 if ! grep -q "$USER" /etc/group | grep -q "nix-users"; then
     sudo usermod -aG nix-users "$USER"
 fi
