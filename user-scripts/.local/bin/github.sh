@@ -31,7 +31,6 @@ if git config --global user.email "$GIT_HELPER"; then
     echo "✅ credential.helper set to $GIT_HELPER"
 else
     echo "❌ Error setting credential.helper"
-    # Note: credential.helper might fail if 'libsecret' is not installed or available
     echo "   (This may be expected if 'libsecret' support isn't installed.)"
 fi
 
