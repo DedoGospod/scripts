@@ -18,7 +18,7 @@ fi
 
 # 2. Set the user.name globally
 git config --global user.name "$GIT_NAME"
-if git config --global user.email "$GIT_NAME"; then
+if git config --global user.name "$GIT_NAME"; then
     echo "✅ user.name set to $GIT_NAME"
 else
     echo "❌ Error setting user.name"
@@ -27,7 +27,7 @@ fi
 
 # 3. Set the credential.helper globally
 git config --global credential.helper "$GIT_HELPER"
-if git config --global user.email "$GIT_HELPER"; then
+if git config --global credential.helper "$GIT_HELPER"; then
     echo "✅ credential.helper set to $GIT_HELPER"
 else
     echo "❌ Error setting credential.helper"
