@@ -17,3 +17,7 @@ fi
 # Pacman Cache Clear
 echo "--- Running Pacman Cache Prune (Keeping last 3) ---"
 sudo paccache -r
+
+# Nix garbage collector
+echo "--- Running nix garbage collector"
+nix store gc
