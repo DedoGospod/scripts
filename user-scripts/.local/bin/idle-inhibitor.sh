@@ -8,9 +8,11 @@ if [ -n "$HYPRIDLE_RUNNING" ]; then
     systemctl --user stop --now hypridle.service
     systemctl --user stop --now wayland-pipewire-idle-inhibit.service
     notify-send -t 1000 "SLEEP DISABLED."
+    echo "SLEEP DISABLED"
 else
     # hypridle is not running, so start it and start sway-audio-idle-inhibit
     systemctl --user start --now hypridle.service
     systemctl --user start --now wayland-pipewire-idle-inhibit.service
     notify-send -t 1000 "SLEEP ENABLED"
+    echo "SLEEP ENABLED"
 fi
