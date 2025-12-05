@@ -5,8 +5,8 @@ set -e
 
 # Setup user scripts
 echo "Stowing user scripts..."
-stow user-scripts
+stow --restow user-scripts
 
 # Setup system scripts
 echo "Stowing system scripts... (Requires sudo)"
-sudo stow -t / system-scripts
+sudo stow -t / --restow system-scripts
